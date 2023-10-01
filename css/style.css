@@ -1,0 +1,223 @@
+
+
+/*==================================== 
+        common css start here
+====================================*/
+            
+
+/*======   common font link here  ========*/
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
+
+/*======   common color & FontFamily here ========*/
+
+:root{
+    --primaryFont: "Josefin Sans", sans-serif;
+    --secondaryFont: "Roboto", sans-serif;
+    --logoColor: #ff6f61;
+    --textColor:#11161e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid green; /* for all element border show */ 
+}
+
+ul, ol, li{
+    list-style: none;
+}
+  
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, p, a, span{
+  margin: 0;
+  padding: 0;
+}
+
+/*======   common body fontFamily here ========*/
+
+body{
+    font-family: var(--primaryFont);
+}
+
+/*==================================== 
+        common css end
+====================================*/
+
+
+        /*==================================== 
+                    Table Contant:
+        Website Name: Aytor e-commerce
+        Developer: Ideatech BD
+        Developer URL: 
+        Licence:    
+
+                1.Home
+                    * navbar
+                    * banner
+                    * service
+                    * fotter
+        ====================================*/
+
+                    /* Home Page
+
+ 
+/*============================================================= 
+    banner slide & contant large (lg) device style design start
+=============================================================*/
+
+/* slide image style design */
+#banner .slide{
+    height: 800px;
+    background-size: cover;  
+    background-position: center;
+}
+
+/* (mega sale) style design */
+#banner .slide h5{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--textColor);
+    transition-delay: 0.05s; /* (h2) for mega sale animation delyin show */
+}
+
+/* (Up To 33% ....) style design */
+#banner .slide h2{
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    color: var(--textColor);
+    margin: 14px 0 16px; /* (14px) for top, (0) for left right, (16px) for bottom*/
+    transition-delay: 0.1s; /* (h2) for flash sale 33% animation delyin show */
+}
+
+/* (paragraph......) style design */
+#banner .slide p{
+    font-family: var(--secondaryFont);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--textColor);
+    transition-delay: 0.2s; /* (p) for paragraph animation delyin show */
+}
+
+/* (Shop Now) button style design */
+#banner .slide a{
+    background-color: var(--logoColor);
+    margin-top: 29px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+    padding: 13px 37px; /* (13px) for top-botttom, (37px) for left-right*/
+    display: inline-block;
+    transition-delay: 0.3s; /* (a) for shop now button animation delyin show */
+}
+
+
+/*============================================================= 
+    banner slide & contant large (lg) device style design end
+=============================================================*/
+
+
+/*========================================================================================
+==========================================================================================
+========================================================================================*/
+
+
+/*================================================================= 
+    banner contant animation style design large (lg) device start 
+=================================================================*/
+
+
+/* slide contant (normal) animation */
+#banner .slide *{ /* (*) for all select */
+    transform: translateY(80px); /* (translateY) for slide contant position down (top-bottom) */
+    opacity: 0; /* slide contant not show */
+    visibility: hidden; /* slide contant not show */
+    transition: 0.5s ease-in; /* slide contant show ease-in by taiming */
+}
+
+/* slide contant (saliding (slick-active)) animation */
+#banner .slide.slick-active *{
+    transform: translateY(0px); /* slide contant position normal */
+    opacity: 1; /* slide contant show */
+    visibility: visible; /* slide contant show */
+}
+
+
+/*================================================================= 
+    banner contant animation style design large (lg) device end 
+=================================================================*/
+
+
+/*========================================================================================
+==========================================================================================
+========================================================================================*/
+
+        
+/*========================================================== 
+    banner dot style design large (lg) device start 
+==========================================================*/
+
+
+
+/* slide dot button position relative for banner upon show */
+#banner{
+    position: relative;
+}
+
+/* slide dot button position for banner upon show */
+#banner .bannerDots{
+    position: absolute;
+    bottom: 26%; /* slide dot button position show for banner shop button down */
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* slide dot button position show for banner shop button down */
+}
+
+/* slide dot button inline-block for side to side showing */
+#banner .bannerDots li{
+    display: inline-block;
+}
+
+/* slide dot button style design */
+#banner .bannerDots li button{
+    border: none; /* no border */
+    color: transparent; /* (transparent) no color */
+    width: 13px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 5px; /* gap for dot button right */
+    transition: 0.3s; /* slide dot button color showing slow */
+}
+
+/*========================================================== 
+    banner dot style design large (lg) device end 
+==========================================================*/
+
+
+/*========================================================================================
+==========================================================================================
+========================================================================================*/
+
+
+/*===================================================================== 
+    banner dot sliding animation style design large (lg) device start 
+======================================================================*/
+
+/* slide dot button selected slide style design (slick-active) */
+#banner .bannerDots li.slick-active button{
+    width: 30px; /* slide dot button expand width show */
+    background-color: var(--logoColor); /* slide dot button color change show */
+}
+
+/*================================================================ === 
+    banner dot sliding animation style design large (lg) device end 
+========================================== =========================*/

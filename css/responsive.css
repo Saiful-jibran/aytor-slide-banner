@@ -1,0 +1,42 @@
+
+/*========================================================== 
+    slide banner responsive small (sm) device style design 
+==========================================================*/
+
+@media (max-width: 767px) {
+    #banner .slide{
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat; /*background-size: cover; */
+    }
+
+    #banner .slide h5{
+        font-size: 18px;
+        margin: 10px 0 0 14px;       
+    }
+
+    #banner .slide h2 {
+        font-size: 32px;
+        margin: 0 14px;
+    }
+
+    #banner .slide p{
+        font-size: 14px;
+        margin: 0 14px;
+    }
+
+    #banner .slide a{
+        font-size: 18px;
+        padding: 8px 16px; /* (8px) for top-botttom, (16px) for left-right*/
+        margin: 26px 14px;
+    }
+
+    #banner .bannerDots{
+        display: none !important;
+    }
+   
+}
+
+/*========================================================== 
+    slide banner responsive small (sm) device style design 
+==========================================================*/
